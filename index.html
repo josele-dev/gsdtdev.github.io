@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSDT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+    <div class="container">
+        <div class="nav-container animate__animated animate__fadeInDown animate__delay-0.5s">
+            <div class="lang-selector" id="lang-menu">
+                <div class="lang-selected">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>ES</span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+                <ul class="lang-dropdown">
+                    <li data-value="es" class="active">ES</li>
+                    <li data-value="gb">GB</li>
+                    <li data-value="ca">CA</li>
+                </ul>
+            </div>            
+            <div class="nav-socials">
+                <ul class="icons">
+                    <li><a href="https://josele-dev.itch.io/gsdt" class="icon fa-brands fa-itch-io"></a></li>
+                    <li><a href="https://discord.gg/tGAtuGtVXn" class="icon fa-brands fa-discord"></a></li>
+                    <li><a href="https://github.com/josele-dev" class="icon fa-brands fa-github"></a></li>
+                    <li><a href="https://www.youtube.com/@GSDT-j1f" class="icon fa-brands fa-youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero-body">
+            <h1 class="animate__animated animate__fadeInDown animate__delay-1s" data-i18n="hero.title">
+                Un <strong>panel</strong>, todo el control: <strong>contenido</strong> y <strong>datos</strong> al alcance de tu mano.
+            </h1>
+            <p class="subtitle animate__animated animate__fadeInUp animate__delay-2s" data-i18n="hero.subtitle">
+                PRÓXIMAMENTE. APLICACIÓN WEB EN LA NUBE.
+            </p>
+            <div class="hero-main-image animate__animated animate__fadeIn animate__delay-3s">
+                <img src="hero-panel.png" alt="Interfaz">
+            </div>
+        </div>
+    </div>
+</header>
+<section class="banner-cta">
+    <div class="container cta-flex">
+        <div class="cta-content">
+            <h1 data-i18n="cta.title">Stop guessing. Start GSDT.</h1>
+            <p data-i18n="cta.description">
+                Conecta tus assets, prueba tus ideas y domina la lógica de tu juego en minutos. Valida, prototipa y acelera tu desarrollo sin perder un segundo. Tu juego, tu estructura, tu control...ahora a velocidad. <strong>¿Listo para transformar tu concepto en código jugable?</strong>
+            </p>
+        </div>
+        <div class="cta-actions">
+            <a href="dossier.pdf" download class="btn btn-primary" data-i18n="cta.btn-dossier">
+                <i class="fa-solid fa-file-pdf"></i> Dossier
+            </a>
+            <a href="launch.zip" download class="btn btn-secondary" data-i18n="cta.btn-launch">
+                <i class="fa-solid fa-rocket"></i> Launch Club
+            </a>
+            <a href="presskit.zip" download class="btn btn-outline" data-i18n="cta.btn-presskit">
+                <i class="fa-solid fa-box-archive"></i> Presskit
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="banner-tgt">
+    <div class="container">
+        <h1 data-i18n="target.title">Apunto solo a los que marcan el ritmo</h1>
+        <div class="target-grid">
+<div class="target-item">
+  <span class="icon"><i class="fa-solid fa-lightbulb"></i></span>
+  <h3>DISEÑADORES</h3>
+</div>
+
+<div class="target-item">
+  <span class="icon"><i class="fa-solid fa-laptop-code"></i></span>
+  <h3>PROGRAMADORES</h3>
+</div>
+
+<div class="target-item">
+  <span class="icon"><i class="fa-solid fa-graduation-cap"></i></span>
+  <h3>EDUCADORES</h3>
+</div>
+
+<div class="target-item">
+  <span class="icon"><i class="fa-solid fa-gear"></i></span>
+  <h3>CREADORES DE MODS</h3>
+</div>
+
+        </div>
+    </div>   
+</section>
+<section class="banner-eng">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="https://godotengine.org/es/"><img src="compatible-with-godot-white.png" alt="Godot"></a></div>
+            <div class="swiper-slide"><a href="https://www.unrealengine.com/"><img src="made-for-u-white.png" alt="Unreal"></a></div>
+            <div class="swiper-slide"><a href="https://www.chronocrash.com/"><img src="compatible-with-openbor-white.png" alt="OpenBOR"></a></div>
+        </div>
+    </div>
+</section>
+<footer>
+    <p class="copyright" data-i18n="footer.copy">MIT License Copyright (c) 2025 José Aracil</p>
+</footer>
+<script src="https://unpkg.com/i18next@23.7.16/i18next.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="lang-selector.js"></script>
+<script src="logo-swiper.js"></script>
+</body>
+</html>
+
