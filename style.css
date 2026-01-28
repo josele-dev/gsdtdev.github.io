@@ -89,54 +89,6 @@ img {
     transition: var(--transition);
 }
 
-.lang-selected:hover {
-    background: rgba(184, 99, 67, 0.2);
-}
-
-.arrow {
-    font-size: 0.7rem;
-    transition: transform 0.3s ease;
-}
-
-.lang-dropdown {
-    position: absolute;
-    top: calc(100% + 5px);
-    left: 0;
-    width: 100%;
-    background: var(--clr-bg-deep); 
-    border: 1px solid var(--clr-accent-soft);
-    border-radius: var(--border-radius);
-    list-style: none;
-    padding: 5px 0;
-    display: none;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-}
-
-.lang-dropdown li {
-    padding: 8px 15px;
-    color: var(--clr-text-light);
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.lang-dropdown li:hover {
-    background: var(--clr-accent-primary);
-    color: var(--white);
-}
-
-.lang-dropdown li.active {
-    color: var(--clr-accent-soft);
-}
-
-.lang-selector.open .lang-dropdown {
-    display: block;
-}
-
-.lang-selector.open .arrow {
-    transform: rotate(180deg);
-}
-
-
 ul.icons li a {
   text-decoration: none;
 }
@@ -509,33 +461,26 @@ p.copyright {
 }
 
 .swiper-slide img {
-    height: 90px; /* Tamaño más elegante y compacto */
+    height: 90px; 
     width: auto;
     object-fit: contain;
     display: block;
     cursor: pointer;
     transition: transform 0.3s ease, filter 0.3s ease;
-    
-    /* Previene que el renderizado de bordes sea "sucio" */
     backface-visibility: hidden;
     image-rendering: -webkit-optimize-contrast;
 }
 
-/* Efecto Hover con sombra suave */
 .swiper-slide img:hover {
-    transform: scale(1.08); /* Un crecimiento más sutil */
+    transform: scale(1.08);
 }
 
-/* --- MEDIA QUERIES (RESPONSIVE) --- */
-
-/* Tablets / Laptops pequeñas */
 @media (max-width: 1024px) {
     .swiper-slide img {
         height: 75px; 
     }
 }
 
-/* Móviles (Smartphones normales) */
 @media (max-width: 768px) {
     .banner-eng {
         min-height: 20vh;
@@ -548,7 +493,6 @@ p.copyright {
     }
 }
 
-/* Móviles muy pequeños */
 @media (max-width: 480px) {
     .swiper-slide img {
         height: 50px; 
